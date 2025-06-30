@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Noticias</title>
+<link rel="stylesheet" href="estilocontacto.css" />
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+<header class="header">
+    <nav class="navbar">
+        <a href="/pagina principal/paginaprincipal.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="logo" viewBox="0 0 16 16" >
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+        </svg>
+        </a>
+        <h1 class="titulo">Corporacion Gestos de paz</h1>
+        <label class="label_hamburguesa" for="menu_hamburgesa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </label>
+
+        <input class="menu_hamburgesa" type="checkbox" name="" id="menu_hamburgesa">
+        <ul class="ul_links">
+            <li class="li_links">
+                <a href="/pagina principal/paginaprincipal.html" class="link">Inicio</a>
+            </li>
+            <li class="li_links">
+                <a href="/Conocenos/conocenos.html" class="link">Conocenos</a>
+            </li>
+            <li class="li_links">
+                <a href="/documentos/documentos.html" class="link">Documentos legales</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="seccion-noticias">
+    <!--NOTICIA 1-->
+    <!--AQUI VA EL CONTENIDO DE LA NOTICIA EXPANDIDA-->
+    <div class="noticia" data-titulo="Título Noticia 1" data-texto="Texto completo de la noticia 1" data-img="/IMAGENES/noticia 1.jpg">
+    <!--AQUI VA EL CONTENIDO EXTERNO DE LA NOTICIA-->
+    <img src="/IMAGENES/noticia 1.jpg" alt="Noticia 1" />
+    <div class="contenido-noticia">
+        <h3>Título Noticia 1</h3>
+        <p>Resumen corto de la noticia 1.</p>
+    </div>
+    </div>
+
+    <!--NOTICIA 2-->
+    <!--AQUI VA EL CONTENIDO DE LA NOTICIA EXPANDIDA-->
+    <div class="noticia" data-titulo="Titulo de la noticia" data-texto="Noticia expandida" data-img="/IMAGENES/noticia 2.jpg">
+    <!--AQUI VA EL CONTENIDO EXTERNO DE LA NOTICIA-->
+    <img src="/IMAGENES/noticia 2.jpg" alt="Noticia 2" />
+    <div class="contenido-noticia">
+        <h3>Título Noticia 2</h3>
+        <p>Resumen corto de la noticia 2.</p>
+    </div>
+    </div>
+
+    <!--NOTICIA 3-->
+
+    <!--AQUI VA EL CONTENIDO DE LA NOTICIA EXPANDIDA-->
+    <div class="noticia" data-titulo="Titulo de la noticia" data-texto="Noticia expandida" data-img="/IMAGENES/noticia3.jpg">
+        <!--AQUI VA EL CONTENIDO EXTERNO DE LA NOTICIA-->
+        <img src="/IMAGENES/noticia3.jpg" alt="Noticia 2" />
+        <div class="contenido-noticia">
+            <h3>Título Noticia 2</h3>
+            <p>Resumen corto de la noticia 2.</p>
+        </div>
+    </div>
+
+    <!--NOTICIA 4-->
+
+    <!--AQUI VA EL CONTENIDO DE LA NOTICIA EXPANDIDA-->
+
+    <div class="noticia" data-titulo="Titulo de la noticia" data-texto="Noticia expandida" data-img="/IMAGENES/noticia 4.jpg">
+        <!--AQUI VA EL CONTENIDO EXTERNO DE LA NOTICIA-->
+        <img src="/IMAGENES/noticia 4.jpg" alt="Noticia 2" />
+        <div class="contenido-noticia">
+            <h3>Título Noticia 2</h3>
+            <p>Resumen corto de la noticia 2.</p>
+        </div>
+    </div>
+
+        
+</section>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modal-img" src="/IMAGENES/noticia 1.jpg" alt="Imagen de la noticia" />
+    <h2 id="modal-title">Noticia expandida</h2>
+    <p id="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum impedit porro ipsam voluptatem quis explicabo tempora, nemo in ratione recusandae aspernatur odit iure facilis, distinctio consectetur veniam provident! Explicabo, dolor.</p>
+    </div>
+</div>
+
+<!-- pie de pagina -->
+<footer class="seccion-contacto">
+    <div class="contenedor-contacto">
+    <h2>Contáctanos </h2>
+    <p><strong>Dirección:</strong> Calle 123, Popayán, Cauca, Colombia</p>
+    <p><strong>Teléfono:</strong> +57 123 456 7890</p>
+    <p><strong>Correo:</strong> contacto@gestosdepaz.org</p>
+    </div>
+</footer>
+
+<script src="contacto.js"></script>
+</body>
+</html>
+

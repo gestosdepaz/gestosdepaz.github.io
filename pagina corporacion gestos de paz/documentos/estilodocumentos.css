@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ /* seccion inferior contacto */
+
+.seccion-contacto {
+    background-color: #007BFF; /* Azul brillante */
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.contenedor-contacto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.contenedor-contacto h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.contenedor-contacto p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+/*SECCION DESCARGAS*/
+.seccion-descargas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio uniforme entre los elementos */
+    margin: 40px 0;
+}
+
+.descarga-item {
+    flex: 1 1 200px; /* Permite que cada elemento tenga un ancho mínimo de 200px y se ajuste según el espacio disponible */
+    max-width: 220px; /* Limita el ancho máximo de cada elemento */
+    text-align: center;
+}
+
+
+.descarga-item img {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.descarga-item img:hover {
+    transform: scale(1.05);
+}
+
+.descarga-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.descarga-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/*SECCION ENCABEZADO*/
+.header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+}
+
+a{
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 var(--padding_left_right);
+}
+
+.menu_hamburgesa{
+    display: none;
+}
+
+.logo {
+    color: var(--color_blanco);
+}
+
+.menu_hamburgesa:checked + .ul_links{
+    height: calc(25vh - var(--altura_header));
+}
+
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+
+.ul_links {
+width: 250px;
+background-color: var(--color_primario_suave);
+position: fixed;
+top: var(--altura_header);
+height: 0;
+overflow: hidden;
+/*height: calc(50vh - var(--altura_header));*/
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 5px;
+right: 0;
+transition: all 0.5s;
+}
+
+.link {
+    font-size: 1.1em;
+    color: var(--color_blanco);
+    font-weight: bold;
+}
+.titulo{
+    color:#fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: bold;
+}
+
+:root {
+    --color_primario: #8527c3fd;
+    --color_primario_suave: #8527c383;
+    --color_blanco: #fff;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
